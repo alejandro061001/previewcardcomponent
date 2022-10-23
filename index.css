@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin-top: 150px;
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    width: 700px;
+    height: 525px;
+    box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.7);
+}
+
+.card-image img{
+    width: 350px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+.subtitle{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 7px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.title{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 1.05;
+}
+
+.description{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.6em;
+    margin-right: 35px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.prices{
+    display: flex;
+    
+}
+
+.discounted-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    margin-left: 30px;
+    
+}
+
+.original-price{
+    
+    font-size: 14px;
+    text-align: center;
+    text-decoration: line-through;
+    
+    color:hsl(228, 12%, 48%) ;
+    margin-left: 40px;
+    margin-top: 55px;
+    
+    
+}
+
+button{
+    background-color:hsl(158, 36%, 37%) ;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    background-color: hsl(158, 36%, 20%);
+}
+
+button img{
+    margin-right: 10px;
+}
+
+@media (max-width: 728px){
+    .card{
+        display: block;
+        height: auto;
+        width: 350px;
+        margin-top: 10px;
+        
+    }
+
+    .card-image img{
+        width: 350px;
+        height: 370px;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+    }
+
+    .subtitle{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    
+    .title{
+        margin-top: -8px;
+        font-size: 30PX;
+        
+    }
+
+    .description{
+        margin-top: -10px;
+    }
+    .prices{
+        margin-top: -40px;
+    }
+
+    button{
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+
+    .original-price{
+        margin-left: 10px;
+    }
+
+    .discounted-price{
+        font-size: 35px;
+    }
+
+}
+
+
